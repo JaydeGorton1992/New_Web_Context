@@ -1,0 +1,583 @@
+/* The body of the file is set to a sans serif font and center aligned */
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+  margin: 0px auto;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#container {
+  
+}
+
+h1, li {
+  font-family: "Roboto Black", sans-serif;
+}
+
+p {
+  font-family: "Roboto Regular", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  width: 5vh;
+  margin: 1rem;
+  display: block;
+  position: fixed;
+  z-index: 1;
+}
+
+div.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+div.header > h1 {
+  flex: 1 0 auto;
+  text-align: right;
+  padding: 0 2rem 0 4rem;
+}
+
+div.header > p {
+  flex: 0 1 auto;
+  align-content: center;
+  margin: 0 1rem;
+}
+#footer {
+  background-color: rgba(0,0,0,0.2); 
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+#menuItems {
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#menuItems li {
+  flex: 0 0 20%;
+  list-style-type: none;
+  margin: 1rem auto;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 2.1rem;
+  line-height: 4rem;
+  color: #000000;
+  font-family: 'Arial Black';
+}
+
+#Booking_Areas {
+  visibility: hidden;
+}
+
+#Facilities {
+  visibility: hidden;
+}
+
+#arrowNav {
+    height: 100px;
+}
+.fa-chevron-left {
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    font-size: 6rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fa-chevron-right {
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    font-size: 6rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#circleindicate{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.fa-circle {
+  position: ablsolute;
+  padding: 0 0.2rem;
+  display: inline-flex;
+}
+
+
+/* Style the background of each page with corresponding colour and different sized lighter coloured leaf */
+
+.navcamera {
+  background-image: url(/images/BlueLeaf.png);
+  background-image: url(/images/BlueLeafsvg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: visible;
+  text-shadow: -1px -1px 0 #78dbdb, 1px -1px 0 #78dbdb, -1px 1px 0 #78dbdb, 1px 1px 0 #78dbdb;
+}
+
+.navmap {
+  background-image: url(/images/PinkLeaf.png);
+  background-image: url(/images/PinkLeafsvg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: visible;
+  text-shadow: -1px -1px 0 #f78296, 1px -1px 0 #f78296, -1px 1px 0 #f78296, 1px 1px 0 #f78296;
+}
+
+.navplants {
+  background-image: url(/images/DarkGreenLeaf.png);
+  background-image: url(/images/DarkGreenLeafsvg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: visible;
+  text-shadow: -1px -1px 0 #8adc7d, 1px -1px 0 #8adc7d, -1px 1px 0 #8adc7d, 1px 1px 0 #8adc7d;
+}
+
+.navactivities {
+  background-image: url(/images/OrangeLeaf.png);
+  background-image: url(/images/OrangeLeafsvg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: visible;
+  text-shadow: -1px -1px 0 #ffc77e, 1px -1px 0 #ffc77e, -1px 1px 0 #ffc77e, 1px 1px 0 #ffc77e;
+}
+
+/* Style the background of each page with corresponding colour and different sized lighter coloured leaf */
+.camerabody {
+  background: url(/images/BlueLeafLightOutlinesvg.svg) top left / 30% no-repeat fixed, url(/images/BlueLeafLightOutlinesvg.svg) top 15% right 10% / 35% no-repeat fixed, url(/images/BlueLeafLightOutlinesvg.svg) bottom left / 50% no-repeat fixed, url(/images/BlueLeafLightOutlinesvg.svg) bottom 30% right / 30% no-repeat fixed, url(/images/BlueLeafLightOutlinesvg.svg) center left 10% / 60% no-repeat fixed;
+  background-color: #78dbdb;  
+}
+
+.activitiesbody {
+  background: url(/images/OrangeLeafLightOutlinesvg.svg) top left / 30% no-repeat fixed, url(/images/OrangeLeafLightOutlinesvg.svg) top 15% right 10% / 35% no-repeat fixed, url(/images/OrangeLeafLightOutlinesvg.svg) bottom left / 50% no-repeat fixed, url(/images/OrangeLeafLightOutlinesvg.svg) bottom 30% right / 30% no-repeat fixed, url(/images/OrangeLeafLightOutlinesvg.svg) center left 10% / 60% no-repeat fixed;
+  background-color: #ffc77e; 
+}
+ 
+.plantsbody {
+  background: url(/images/LightGreenLeafLightOutlinesvg.svg) top left / 30% no-repeat fixed, url(/images/LightGreenLeafLightOutlinesvg.svg) top 15% right 10% / 35% no-repeat fixed, url(/images/LightGreenLeafLightOutlinesvg.svg) bottom left / 50% no-repeat fixed, url(/images/LightGreenLeafLightOutlinesvg.svg) bottom 30% right / 30% no-repeat fixed, url(/images/LightGreenLeafLightOutlinesvg.svg) center left 10% / 60% no-repeat fixed;
+  background-color: #d1ff9f;
+}
+
+.mapbody {
+  background: url(/images/PinkLeafLightOutlinesvg.svg) top 15% right 10% / 30% no-repeat fixed, url(/images/PinkLeafLightOutlinesvg.svg) top 5% left 10% / 10% no-repeat fixed, url(/images/PinkLeafLightOutlinesvg.svg) top 25% left / 5% no-repeat fixed, url(/images/PinkLeafLightOutlinesvg.svg) bottom 10% left / 10% no-repeat fixed, url(/images/PinkLeafLightOutlinesvg.svg) bottom 20% left 15% / 20% no-repeat fixed, url(/images/PinkLeafLightOutlinesvg.svg) top 30% left 10% / 10% no-repeat fixed;
+  background-color: #f2f2f2;
+}
+/* Main Map page */
+.mapsearch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#map {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+  background: url(/images/map.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#map img {
+  width: 100%;
+  max-height: 100%;
+}
+
+#sidebar {
+  flex: 0 1 auto;
+  margin: auto;
+  width: 20%;
+  padding: 1rem;
+  position: relative;
+}
+
+#sidebar h1 {
+  text-align: center;
+}
+
+
+.keycontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.keycontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #ffffff;
+  border: 2px solid #f78296;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.keycontainer:hover input ~ .checkmark {
+  background-color: rgba(247, 130, 150, 0.5);
+}
+
+/* When the radio button is checked, add a blue background */
+.keycontainer input:checked ~ .checkmark {
+  background-color: #f78296;
+  color: #f78296;
+}
+
+
+
+
+/* Plants and Camera cardlist */
+.cardlist {
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.displaybox {
+  position: relative;
+  flex: 1 1 auto;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 1rem 2rem;
+  padding: 0;
+  height: auto;
+  text-align: center;
+  color: #000000;
+}
+
+.displayimg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.displayimg img {
+  width: 100%;
+  max-height: 100%;
+  background-position: center;
+}
+
+.displayFooter {
+  position: absolute;
+  bottom: 0.25rem;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  background-color: rgba(0,0,0,0.4); 
+  color: #ffffff;
+}
+
+.displayFooter p {
+  text-align: center;
+  font: 1.2rem "Arial Black", sans-serif;
+  letter-spacing: 0.1rem;
+  padding: 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+
+/* Activities cardlist */
+.actcardlist {
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+}
+
+.actdisplaybox {
+  flex: 0 1 auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 1rem;
+  height: auto;
+  text-align: center;
+  color: #000000;
+  background: #f5f5f5;
+}
+.actdisplayimg {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.actdisplayimg img {
+  width: 100%;
+  max-height: 100%;
+  background-position: center;
+}
+
+.actdisplayFooter {
+  align-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.actdisplayFooter h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.actdisplayFooter p {
+  text-align: left;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Activities - Subpages */
+
+div.heroimage {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+div.heroimage img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.activityname {
+  margin-left: 2rem;
+}
+
+div.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.informationblock {
+  display: flex;
+  flex: 1 1 auto;
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.information {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.detailtitle {
+  flex: 0 1 auto;
+  width: 40%;
+  padding: 0  1rem 0 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.detailtitle h3 {
+  text-align: right;
+}
+
+.details {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 1.7rem;
+  font-size: 1.4rem;
+}
+
+
+div.activitymap {
+  flex: 0 1 auto;
+  height: 400px;
+  width: 30%;
+  overflow: hidden;
+  padding: 0;
+  margin-right: 1rem;
+  align-items: center;
+}
+
+div.activitymap img {
+  width: auto;
+  height: auto;
+}
+
+/* Plant & Camera information subpages */
+ .plantheroimage, .cameraheroimage {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+ .plantheroimage img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.cameraheroimage img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+div.descriptionblock {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+div.camerainfoblock {
+  display: flex;
+  flex: 1 1 auto;
+  width: 80%;
+  flex-direction: column;
+  padding-left: 2rem;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+
+div.plantinfoblock {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plantinfo {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.plantdetailtitle {
+  flex: 0 1 auto;
+  width: 40%;
+  padding: 0  1rem 0 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.plantdetailtitle h3 {
+  text-align: right;
+}
+
+.plantdetails {
+  flex: 0 1 auto;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* For desktop and larger screens */
+@media only screen and (min-width: 1000px) {
+  section { 
+  width: 100%;
+  /* height: 100vh; */ 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .displaybox {
+    width: 80%;
+  }
+  .actdisplaybox {
+    width: 80%;
+  }
+  .actcardlist {
+    align-content: center;
+  }
+  
+  .mapsearch {
+    flex-direction: column;
+    align-content: center;
+  }
+  
+  #sidebar {
+    width: 80%;
+  }
+  
+  #map {
+    width: 100%;
+  }
+}
+
